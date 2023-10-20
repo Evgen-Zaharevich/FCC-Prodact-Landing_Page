@@ -1,0 +1,29 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 350px;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url(https://www.mebelvdom.ua/static/content/thumbs/1520-1520/9/25/h2oh5q-d55865b38e69d31ab2ede83e62dec259.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+}
