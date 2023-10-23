@@ -4,91 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCC-Product-Landing-Page</title>
-    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <div class="container">
       <header id="header">
-    <div class="logo-container">
-      <img id="header-img"
-      src="https://cdn-icons-png.flaticon.com/512/9039/9039857.png"
-      alt="image tree dracaena"
-      width="75" hight="75"
-      />
-      <p>Dracaena</p>
+        <a href="" class="logo-link">
+          <img
+            class="logo"
+            id="header-img"
+            src="https://cdn-icons-png.flaticon.com/512/9039/9039857.png"
+            alt="image tree dracaena"
+            width="105"
+            hight="55"
+          />
+          <p class="logo_name">Dracaena</p>
+        </a>
+
+        <nav id="nav-bar">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#video">Video</a>
+          <a class="nav-link" href="#мake_an_order">Make an order</a>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Best plant for your home</h1>
+
+        <section id="about">
+          <p class="about-text">
+            Dracaenas are popular decorative leafy plants that can be cared for
+            even by beginners. Beautiful leaves of rich green color look
+            appropriate in any interior, refresh it and fill it with natural
+            beauty. There are several dozen varieties of dracaena, each of which
+            has its own unique characteristics - from humidifying the air in the
+            room to neutralizing formaldehyde emissions.<br />
+            It is perfect for decorating houses, halls, offices, shop windows,
+            apartments, winter gardens, terraces, and much more.
+          </p>
+
+          <p class="about-text">
+            In general, dracaena has many advantages: unpretentiousness in care,
+            endurance, chic appearance, and in addition, it is also an excellent
+            air purifier. It has an amazing ability to absorb from the air such
+            harmful substances as formaldehyde, toluene, benzene, which are
+            emitted by plastics, varnishes, paints, linoleum, etc. In addition,
+            it also has bactericidal properties, thanks to which it reduces the
+            number of pathogenic bacteria in the room.
+          </p>
+        </section>
+
+        <section class="video-section">
+          <iframe
+            id="video"
+            width="500"
+            height="500"
+            src="https://www.youtube.com/embed/NDJkfeClWuU"
+            title="5 Quick tips Dracaena"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section class="card-section">
+          <div class="card">
+            <h2 class="card_title">Liltle Tree</h2>
+            <p class="card_contents">10$</p>
+            <p class="card_contents">tree 10cm - 15cm high</p>
+            <button class="card_button" type="button">Select</button>
+          </div>
+
+          <div class="card">
+            <h2 class="card_title">Medium Tree</h2>
+            <p class="card_contents">30$</p>
+            <p class="card_contents">tree 30cm - 35cm high</p>
+            <button class="card_button" type="button">Select</button>
+          </div>
+
+          <div class="card">
+            <h2 class="card_title">Big Tree</h2>
+            <p class="card_contents">50$</p>
+            <p class="card_contents">tree 50cm - 55cm high</p>
+            <button class="card_button" type="button">Select</button>
+          </div>
+        </section>
+
+        <section id="мake_an_order">
+          <form
+            id="form"
+            name="email-form"
+            autocomplete="on"
+            action="https://www.freecodecamp.com/email-submit"
+          >
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              pattern="^\\S+@\\S+\\.\\S+$"
+            />
+
+            <input class="email-button" id="submit" type="submit" />
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>Copyright 2023, Dracaena Co</p>
+      </footer>
     </div>
-
-    <nav id="nav-bar">
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#video">Video</a>
-      <a class="nav-link" href="#мake_an_order">Make an order</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Best plant for your home</h1>
-
-      <section id="about">
-        <p>Dracaenas are popular decorative leafy plants that can be cared for even by beginners. Beautiful leaves of rich green color look appropriate in any interior, refresh it and fill it with natural beauty. There are several dozen varieties of dracaena, each of which has its own unique characteristics - from humidifying the air in the room to neutralizing formaldehyde emissions.
-        </p>
-
-        <p>
-      In general, dracaena has many advantages: unpretentiousness in care, endurance, chic appearance, and in addition, it is also an excellent air purifier. It has an amazing ability to absorb from the air such harmful substances as formaldehyde, toluene, benzene, which are emitted by plastics, varnishes, paints, linoleum, etc. In addition, it also has bactericidal properties, thanks to which it reduces the number of pathogenic bacteria in the room.
-        </p>
-
-        <p>
-      It is perfect for decorating houses, halls, offices, shop windows, apartments, winter gardens, terraces, and much more.
-        </p>
-      </section>
-
-    <section id="video">
-      <iframe 
-        width="500" 
-        height="350" 
-        src="https://www.youtube.com/embed/NDJkfeClWuU" 
-        title="5 Quick tips Dracaena" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-      </iframe>
-    </section>
-  
-    <section id="мake_an_order">
-      <form id="form" name="email-form" autocomplete="on" action="https://www.action.com/email">
-          <input id="email" type="email" name="email" placeholder="Enter your email address" pattern="^\\S+@\\S+\\.\\S+$"></input>
- 
-        <button type="submit">I want to buy</button>
-      </form>
-    </section>
-
-    <section>
-      <div>
-        <h2>Liltle Tree</h2>
-        <p>10$</p>
-        <p>tree 10cm - 15cm high</p>
-        <button>Select</button>
-      </div>  
-
-      <div>
-        <h2>Medium Tree</h2>
-        <p>30$</p>
-        <p>tree 30cm - 35cm high</p>
-        <button>Select</button>
-      </div>
-
-      <div>
-        <h2>Big Tree</h2>
-        <p>50$</p>
-        <p>tree 50cm - 55cm high</p>
-        <button>Select</button>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Copyright 2023, Dracaena Co</p>
-  </footer>
   </body>
-  
 </html>

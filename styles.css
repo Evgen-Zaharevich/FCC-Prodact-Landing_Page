@@ -1,29 +1,174 @@
-body {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
+* {
   margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  word-spacing: 1px;
 }
 
 body::before {
   content: "";
   position: fixed;
   top: 0;
-  left: 350px;
+  left: 300px;
   width: 60%;
   height: 100%;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.9;
   background-image: url(https://www.mebelvdom.ua/static/content/thumbs/1520-1520/9/25/h2oh5q-d55865b38e69d31ab2ede83e62dec259.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-header {
-  display: flex;
+.container {
+  position: relative;
+  padding: 15px 30px;
 }
 
-.logo-container {
+header {
+  position: fixed;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  color: green;
+  border-color: green;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo_name {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.nav-link {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: green;
+  border-color: green;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 120px;
+  text-align: center;
+  text-shadow: 3px 2px 5px #000000;
+  color: green;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.about-text {
+  width: 450px;
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border-radius: 100%;
+  margin-bottom: 100px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #52c234, #061700);
+  border-radius: 8px;
+  color: white;
+}
+
+.card_title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.card_button {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 30px;
+  border-color: #52c234;
+}
+
+.email-button {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right, #52c234, #061700);
+  color: white;
+  margin-bottom: 100px;
 }
